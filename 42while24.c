@@ -1,22 +1,22 @@
 #include <stdio.h>
 int main(void)
 {
+    int k=0;
     int sum=0;
-    int k;
 
-    for (k=0;k<5;k++)
+    while (k<5)
     {
-        sum+=k; //use something different in "while" version
+        sum=sum+k;
+        k++;
     }
 
     printf ("%d\n",sum);
 
-    k=5;
-
-    while (k>0) {
-        k=k-1; //use something different in "for" version
+    for (k=4;k>-1;k--)
+    {
         printf ("%d\n", k);
     }
+
 
 }
 
